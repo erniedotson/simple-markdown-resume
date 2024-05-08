@@ -1,0 +1,71 @@
+# John Doe Resume
+
+555.555.5555 | <email@email.com> | [linkedin.com/...](https://linkedin.com/)
+
+## Skills
+
+---
+
+**Languages/Scripts:** C++, Fortan, Java
+
+**Platforms/Servers:** Windows, Linux, Mac
+
+**Databases:** MSSQL, MongoDB, Oracle
+
+## Experience
+
+---
+
+### Acme Corp - Remote
+
+#### Principal Software Engineer (01/2020 - present)
+
+##### Sr. Software Engineer (01/2015 - 01/2020)
+
+<!-- Since we are nesting two positions here, we have a lot of accomplishments.
+We will show/hide the most relevent for the position which we are applying for.
+//-->
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<!--
+- Fringilla phasellus faucibus scelerisque eleifend. Eget dolor morbi non arcu risus quis.
+//-->
+- Pellentesque eu tincidunt tortor aliquam nulla facilisi. Integer eget aliquet nibh praesent tristique.
+- Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Fermentum iaculis eu non diam phasellus vestibulum lorem sed.
+- Urna et pharetra pharetra massa massa ultricies mi quis. Nisl nisi scelerisque eu ultrices vitae.
+<!--
+- Quam vulputate dignissim suspendisse in est. Orci phasellus egestas tellus rutrum tellus pellentesque eu.
+- Eleifend mi in nulla posuere. Dolor sit amet consectetur adipiscing. Sed cras ornare arcu dui.
+- Vitae congue mauris rhoncus aenean vel. Eget nunc scelerisque viverra mauris in aliquam.
+//-->
+- A erat nam at lectus urna duis convallis convallis. Libero justo laoreet sit amet.
+
+### Other Corp - Seattle, WA
+
+#### Software Engineer (01/2010 - 01/2015)
+
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+- Consectetur adipiscing elit duis tristique sollicitudin.
+- Libero id faucibus nisl tincidunt eget nullam non. Pellentesque sit amet porttitor eget dolor morbi. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.
+
+<!-- hide this irrelevent work
+### University of Texas, TX
+
+#### Intern (09/1999 - 05/2000)
+
+- Performed software updates in computer lab
+- Fixed printer paper jams
+//-->
+
+## Education
+
+---
+
+- **B.S. Computer Science - University of Texas** - 05/2000
+
+## Certifications
+
+---
+
+- **Certified Information Systems Security Professional (CISSP)** - 2014
+- **Cisco Certified Network Associate (CCNA)** - 2011
