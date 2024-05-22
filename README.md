@@ -11,7 +11,7 @@ Simple Markdown Resume is a docker image for converting a resume in markdown for
 
 1. Clone or download the repo
 1. Build the docker image: `make image`
-1. Modify [resume.sample.md](resume.sample.md) to `resume.md` and include your own content.
+1. Modify [resume.md.sample](resume.md.sample) to `resume.md` and include your own content.
 1. Use the docker image to convert your resume: `make resume`
 
 ##  😭 Motives
@@ -34,10 +34,35 @@ Markdown... ~~resume~~ everything-as-code... maintain in code editor... *yes, pl
 
 [Pandoc](https://pandoc.org/) is a document converter which works very well for converting Markdown to other format, like Word, PDF, and HTML, *(oh my!)*
 
-There are many [pdf-engines](https://pandoc.org/MANUAL.html#option--pdf-engine) for Pandoc to assist in producing PDF documents. Most of these use HTML as an intermediary format, so they convert Markdown -> HTML -> PDF.
+There are many [pdf-engines](https://pandoc.org/MANUAL.html#option--pdf-engine) for Pandoc to assist in producing PDF documents. Most of these use HTML as an intermediary format, so they convert Markdown -> HTML -> PDF. [WeasyPrint](https://github.com/Kozea/WeasyPrint/) is a pdf-engine that produces nice looking PDF documents with lots of control using basic CSS layout.
 
-[WeasyPrint](https://github.com/Kozea/WeasyPrint/) is a pdf-engine that produces nice looking PDF documents with lots of control using basic CSS layout.
+[pandoc-ext/pagebreak](https://github.com/pandoc-ext/pagebreak) is a LUA script to add manual page breaks to pandoc output formats. To add a pagebreak add `\pagebreak` surrounded by two empty lines to your markdown, i.e.:
+
+```markdown
+before the break
+
+\pagebreak
+
+after the break
+```
 
 ## 🎉 Tying it all together
 
-Take Pandoc, WeasyPrint and their dependencies and bundle them into a Docker image, to make it portable and minimize the host dependencies.
+Take Pandoc, WeasyPrint, and pandoc-ext/pagebreak and their dependencies and bundle them into a Docker image, to make it portable and minimize the host dependencies.
+
+## 💄 Styles
+
+The following styles are applied to HTML and PDF outputs via [style.css](src/style.css) and to docx via [style-reference.docx](src/style-reference.docx):
+
+- Page margins at 0.25 inches.
+- Black text on white background.
+- Serif font for headings.
+    - Cambria/Times New Roman/serif 18pt Bold for H1/Name.
+    - Cambria/Times New Roman/serif 16pt Normal for H2/Section Headings (Skills, Experience, Education, etc.).
+    - Cambria/Times New Roman/serif 14pt Normal for H3/Company Name.
+    - Cambria/Times New Roman/serif 14pt Bold for H4/Job Title and years.
+    - Cambria/Times New Roman/serif 12pt Normal for H5/2nd Job Title and years.
+    - Cambria/Times New Roman/serif 10pt Normal for H6.
+- Sans serif font for body text.
+    - Calibri/Helvetica/sans-serif 10pt Bold for Location and Contact line (under/right of H1/Name).
+    - Calibri/Helvetica/sans-serif 10pt Normal for body text.

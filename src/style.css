@@ -1,0 +1,118 @@
+@page {
+    margin: 0.25in;
+    size: 8.5in 11in;
+}
+
+html {
+    font-family: Calibri, Helvetica, sans-serif;
+    font-size: 10pt; /* Set Standard text size - other headings will key off of this. */
+    font-weight: normal;
+    max-width: 800px; /* Reasonable width that works for both HTML and PDF outputs. */
+}
+
+body {
+    font-size: 1rem; /* 1rem = 10pt */
+    color: #000000;
+    background-color: #ffffff;
+}
+
+p {
+    margin: 0;
+}
+  
+a {
+    color: #0000ff;
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 1em; /* Reduce the default padding for lists */
+}
+
+/* Name */
+h1 {
+    float: left;
+    font-family: Cambria, 'Times New Roman', serif;
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+/* Take the first paragrah immediately following the H1 and float to the right. */
+h1 + p {
+    float: right;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+/* If there is an additional paragrah... */
+h1 + p + p {
+    clear: both;    /* push down below floating elements above */
+}
+  
+/* Section Headings (Skills, Experience, Education, etc.) */
+h2 {
+    clear: both; /* push down below floating elements above */
+    font-family: Cambria, 'Times New Roman', serif;
+    font-size: 16pt;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+  
+/* Secondary Headings, i.e. Company names under Experience */
+h3 {
+    font-family: Cambria, 'Times New Roman', serif;
+    font-size: 14pt;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+/* Right-align the emphasized portion (assumed to be the location after Company name) */
+h3 > em {
+    float: right;
+}
+
+/* Tertiary Headings, i.e. Job Titles and years */
+h4 {
+    font-family: Cambria, 'Times New Roman', serif;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+/* Right-align the emphasized portion (assumed to be the years at the end of job title) */
+h4 > em {
+    float: right;
+}
+
+/* Secondary job titles (i.e. A second title at the same company) */
+h5 {
+    font-family: Cambria, 'Times New Roman', serif;
+    font-size: 12pt;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+/* Right-align the emphasized portion (assumed to be the years at the end of job title) */
+h5 > em {
+    float: right;
+}
+
+/* Not currently used, but included for completeness */
+h6 {
+    font-family: Cambria, 'Times New Roman', serif;
+    font-size: 10pt;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+/* Right-align the emphasized portion (assumed to be the years at the end of job title) */
+h6 > em {
+    float: right;
+}
