@@ -54,7 +54,7 @@ Take Pandoc, WeasyPrint, and pandoc-ext/pagebreak and their dependencies and bun
 
 The following styles are applied to HTML and PDF outputs via [style.css](src/style.css) and to docx via [style-reference.docx](src/style-reference.docx):
 
-- Page margins at 0.25 inches.
+- Page margins at 0.5 inches.
 - Black text on white background.
 - Serif font for headings.
     - Cambria/Times New Roman/serif 18pt Bold for H1/Name.
